@@ -1,0 +1,21 @@
+body {
+    display:grid;
+    grid-template-rows: 700px 1fr 1fr;
+}
+
+
+header {
+    // grid-column: 1 / span 4;
+}
+
+main {
+
+}
+
+footer {
+
+}
+
+@media screen and (min-width:992px){
+    
+}
