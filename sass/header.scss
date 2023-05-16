@@ -1,0 +1,46 @@
+header {
+    // grid-column: 1 / span 4;
+}
+
+nav {
+        padding: 1.25rem;
+    ul {
+        display: none;
+        list-style: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 2rem;
+        height: 100vh;
+        z-index: 1;
+        background: #003349;
+        text-align: center;
+        &.active {
+            display: block;
+        }
+        li {
+            padding: 1.25rem 0;
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 2rem;
+                font-family: sans-serif;
+            }
+        }
+    }
+}
+
+#hamburger_toggle {
+    display: inline-block;
+    margin-right: 1.25rem;
+    span{
+        display: block;
+        width: 26px;
+        height: 2px;
+        background-color: black;
+        margin: 5px 0;
+    }
+}
