@@ -44,3 +44,36 @@ nav {
         margin: 5px 0;
     }
 }
+
+
+@media screen and (min-width:992px){
+    #hamburger_toggle, #close_btn {
+        display: none;
+    }
+
+    nav {
+        ul {
+            display: inline-block;
+            position: unset;
+            top: unset;
+            left: unset;
+            right: unset;
+            bottom: unset;
+            margin: unset;
+            padding: unset;
+            height: unset;
+            z-index: unset;
+            background: unset;
+            text-align: unset;
+            li {
+                display: inline-block;
+                padding: 0;
+                margin-left: 1rem;
+                a {
+                    color: black;
+                    font-size: 1rem;
+                }
+            }
+        } 
+    }
+}

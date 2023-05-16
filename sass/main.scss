@@ -37,7 +37,14 @@ transform: rotate(45deg);
 .close:after {
 transform: rotate(-45deg);
 }
-  
+
+*:focus {
+    -webkit-box-shadow:0px 0px 5px 2px rgb(119 0 149 / 90%);
+    -moz-box-shadow: 0px 0px 5px 2px rgb(119 0 149 / 90%);
+    box-shadow: 0px 0px 5px 2px rgb(119 0 149 / 90%);
+    outline: none;
+}
+
 main {
 
 }
