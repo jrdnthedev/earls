@@ -1,0 +1,32 @@
+{
+  "name": "earls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile",
+  "typings": "gulpfile",
+  "dependencies": {
+    "browser-sync": "^2.29.1",
+    "browsersync": "^0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "sass": "^1.62.1",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrdnthedev/earls.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrdnthedev/earls/issues"
+  },
+  "homepage": "https://github.com/jrdnthedev/earls#readme"
+}

@@ -1,6 +1,12 @@
+@use 'variables';
 .headline-main {
     font-family: serif;
     font-size: 1.4rem;
-    color: #551a8b;
+    color: variables.$primary;
     font-weight: bold;
+}
+
+h1 {
+    margin: 0;
+    display: inline-block;
 }

@@ -1,11 +1,18 @@
+@use 'variables';
 @import 'typography';
 @import 'header';
 
+html,body {
+    height: 100%;
+}
 body {
     display:grid;
-    grid-template-rows: 700px 1fr 1fr;
+    // grid-template-columns: repeat(12,1fr);
+    // grid-template-rows: min-content auto min-content;
+    grid-template: min-content auto min-content / repeat(12, 1fr);
     font-size: 16px;
     margin: 0;
+    font-family: sans-serif;
 }
 
 .scroll-lock {
@@ -29,7 +36,7 @@ left: 15px;
 content: ' ';
 height: 33px;
 width: 2px;
-background-color: #fff;
+background-color: variables.$white;
 }
 .close:before {
 transform: rotate(45deg);
@@ -46,11 +53,12 @@ transform: rotate(-45deg);
 }
 
 main {
-
+    grid-column: 1 / -1;
+    padding: 4rem 0;
 }
 
 footer {
-
+    grid-column: 1 / -1;
 }
 
 @media screen and (min-width:992px){
