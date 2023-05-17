@@ -11,6 +11,7 @@ body {
     // grid-template-rows: min-content auto min-content;
     grid-template: min-content auto min-content / repeat(12, 1fr);
     font-size: 16px;
+    color: variables.$primary;
     margin: 0;
     font-family: sans-serif;
 }
@@ -57,6 +58,22 @@ main {
     padding: 4rem 0;
 }
 
+section {
+    margin:0  1rem;
+    &.banner {
+        margin: 0;
+    }
+}
+
+figure {
+    margin: 1rem 0;
+    img {
+        width: 100%;
+    }
+    figcaption {
+
+    }
+}
 footer {
     grid-column: 1 / -1;
 }
