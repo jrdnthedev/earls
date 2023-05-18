@@ -9,7 +9,7 @@ nav {
         padding: 1.25rem;
         display: flex;
     ul {
-        display: none;
+        visibility: hidden;
         list-style: none;
         position: absolute;
         top: 0;
@@ -22,14 +22,18 @@ nav {
         z-index: 1;
         background: variables.$primary;
         text-align: center;
+        opacity: 0;
+        transition: .6s ease all;
         &.active {
-            display: block;
+            visibility: visible;
+            opacity: 1;
+            transition: .6s ease all;
         }
         li {
             padding: 1.25rem 0;
             a {
                 text-decoration: none;
-                color: white;
+                color: variables.$white;
                 font-size: 2rem;
                 font-family: sans-serif;
             }
