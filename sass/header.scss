@@ -4,16 +4,13 @@ header {
     grid-column: 1 / -1;
     position: sticky;
     top: 0;
-}
-
-nav {
+    nav {
         padding: 1.25rem;
         display: flex;
         
         background: variables.$white;
     ul {
         visibility: hidden;
-        list-style: none;
         position: absolute;
         top: 0;
         left: 0;
@@ -35,14 +32,16 @@ nav {
         li {
             padding: 1.25rem 0;
             a {
-                text-decoration: none;
                 color: variables.$white;
                 font-size: 2rem;
                 font-family: sans-serif;
             }
         }
     }
+    }
 }
+
+
 
 #hamburger_toggle {
     display: inline-block;
@@ -66,32 +65,37 @@ nav {
         display: none;
     }
 
-    nav {
-        display: block;
-        ul {
-            display: inline-block;
-            position: unset;
-            top: unset;
-            left: unset;
-            right: unset;
-            bottom: unset;
-            margin: unset;
-            padding: unset;
-            height: unset;
-            z-index: unset;
-            background: unset;
-            text-align: unset;
-            visibility: visible;
-            opacity: 1;
-            li {
+    header {
+        nav {
+            display: block;
+            ul {
                 display: inline-block;
-                padding: 0;
-                margin-left: 1rem;
-                a {
-                    color: variables.$primary;
-                    font-size: 1rem;
+                position: unset;
+                top: unset;
+                left: unset;
+                right: unset;
+                bottom: unset;
+                margin: unset;
+                padding: unset;
+                height: unset;
+                z-index: unset;
+                background: unset;
+                text-align: unset;
+                visibility: visible;
+                opacity: 1;
+                li {
+                    display: inline-block;
+                    padding: 0;
+                    margin-left: 1rem;
+                    a {
+                        color: variables.$primary;
+                        font-size: 1rem;
+                        &:hover {
+                            color: variables.$tertiary;
+                        }
+                    }
                 }
-            }
-        } 
+            } 
+        }
     }
 }

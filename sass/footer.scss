@@ -1,0 +1,33 @@
+@use 'variables';
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-column: 1 / -1;
+    margin:0  1rem;
+    > div {
+        grid-column: span 6;
+        border-top: 1px solid variables.$primary;
+        border-bottom: 1px solid variables.$primary;
+        &:last-child {
+            border-left: 1px solid variables.$primary;
+        }
+    }
+}
+
+#footer-title {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#newsletter {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#signoff {
+    color: variables.$tertiary;
+}
