@@ -3,9 +3,6 @@
 @import 'header';
 @import 'images';
 
-html,body {
-    height: 100%;
-}
 body {
     display:grid;
     // grid-template-columns: repeat(12,1fr);
@@ -18,7 +15,7 @@ body {
 }
 
 .scroll-lock {
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .close {
@@ -61,12 +58,12 @@ transform: rotate(-45deg);
 }
 main {
     grid-column: 1 / -1;
-    padding: 4rem 0;
+    padding: 0 0 4rem 0;
 }
 
 section {
     margin:0  1rem 5rem;
-    &#banner {
+    &#banner, &#main_bkg {
         margin: 0 0 5rem;
     }
 }

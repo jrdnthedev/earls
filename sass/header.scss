@@ -2,12 +2,15 @@
 header {
     //start / end values
     grid-column: 1 / -1;
-    height: 700px;
+    position: sticky;
+    top: 0;
 }
 
 nav {
         padding: 1.25rem;
         display: flex;
+        
+        background: variables.$white;
     ul {
         visibility: hidden;
         list-style: none;
