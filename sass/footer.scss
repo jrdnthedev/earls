@@ -9,8 +9,39 @@ footer {
         grid-column: span 6;
         border-top: 1px solid variables.$primary;
         border-bottom: 1px solid variables.$primary;
-        &:last-child {
+        &:last-of-type {
             border-left: 1px solid variables.$primary;
+        }
+    }
+}
+
+#secondary_menu {
+    text-align: center;
+    padding: 0;
+    margin: 2rem 0;
+    li {
+        margin-bottom: 1rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            font-weight: bold;
+            color: variables.$primary;
+        }
+    }
+}
+
+#contact_menu {
+    text-align: center;
+    padding: 0;
+    margin: 2rem 0;
+    li {
+        margin-bottom: 1rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            color: variables.$primary;
         }
     }
 }
