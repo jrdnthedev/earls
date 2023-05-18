@@ -63,6 +63,51 @@ figure {
     }
 }
 
+
+@media screen and (min-width:630px){
+    #notable_images {
+        display: grid;
+        grid-template: min-content auto min-content / repeat(12, 1fr);
+        gap: 1em;
+        figure {
+            &:first-of-type {
+                grid-column: span 12;
+            }
+            grid-column: span 6;
+        }
+    }
+}
+
+@media screen and (min-width:800px){
+    #updates-section {
+        display: grid;
+        grid-template: min-content auto min-content/repeat(12, 1fr);
+        gap: 1em;
+        > * {
+            grid-column: span 4;
+        }
+    }
+
+    #blog-section figure{
+        display: grid;
+        grid-template: min-content auto min-content/repeat(12, 1fr);
+        gap: 1em;
+        > * {
+            grid-column: span 6;
+        }
+    }
+
+    #notable_images {
+        gap: 1em;
+        figure {
+            &:first-of-type {
+                grid-column: span 4;
+            }
+            grid-column: span 4;
+        }
+    }
+}
+
 @media screen and (min-width:992px){
     
 }
