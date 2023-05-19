@@ -5,7 +5,7 @@ const ts = require('gulp-typescript');
 const browserSync = require('browser-sync').create();
 
 function compileSass(){
-    return src('sass/**/*.scss')
+    return src('sass/main.scss')
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(dest('dist/css'));
