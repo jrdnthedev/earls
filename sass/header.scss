@@ -41,7 +41,14 @@ header {
     }
 }
 
+#main_nav {
+    display: grid;
+    grid-template: min-content auto min-content / repeat(12,1fr);
+}
 
+#menu_container {
+    grid-column: 3 /span 8;
+}
 
 #hamburger_toggle {
     display: inline-block;
