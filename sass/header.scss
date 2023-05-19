@@ -18,10 +18,9 @@ header {
         bottom: 0;
         margin: 0;
         padding: 2rem;
-        height: 100vh;
+        height: calc(100vh - 64px);
         z-index: 1;
         background: variables.$primary;
-        text-align: center;
         opacity: 0;
         transition: .6s ease all;
         &.active {
@@ -43,11 +42,11 @@ header {
 
 #main_nav {
     display: grid;
-    grid-template: min-content auto min-content / repeat(12,1fr);
 }
 
 #menu_container {
     grid-column: 3 /span 8;
+    align-self: center;
 }
 
 #hamburger_toggle {
