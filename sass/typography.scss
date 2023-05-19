@@ -46,3 +46,16 @@ h1 {
 h2{
     margin: 0;
 }
+
+
+@media screen and (min-width:800px){
+    .secondary-blurb {
+        font-size: 1.2rem;
+        margin: 0;
+        line-height: 1.8rem;
+    }
+
+    .headline-secondary{
+        font-size: 3rem;
+    }
+}

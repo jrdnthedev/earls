@@ -57,7 +57,7 @@ header {
 
 #main_bkg {
     background-image: url('../img/grilled_platter-min.jpg');
-    height: 634px;
+    height: calc(100vh - 140px);
 }
 
 @media screen and (min-width:992px){
