@@ -68,7 +68,7 @@ figure {
     #notable_images {
         display: grid;
         grid-template: min-content auto min-content / repeat(12, 1fr);
-        gap: 1em;
+        gap: 0 1em;
         figure {
             &:first-of-type {
                 grid-column: span 12;
@@ -82,18 +82,37 @@ figure {
     #updates-section {
         display: grid;
         grid-template: min-content auto min-content/repeat(12, 1fr);
-        gap: 1em;
+        gap: 0 1em;
         > * {
             grid-column: span 4;
+        }
+        .title {
+            font-size: 4rem;
+            line-height: 4rem;
+        }
+        #updates_container {
+            align-self: center;
         }
     }
 
     #blog-section figure{
         display: grid;
         grid-template: min-content auto min-content/repeat(12, 1fr);
-        gap: 1em;
+        gap: 0em 3rem;
         > * {
             grid-column: span 6;
+        }
+        figcaption {
+            text-align: left;
+            align-self: center;
+        }
+        #blog_container {
+            width: 216px;
+            margin: 0px auto 0 2rem;
+            .title {
+                line-height: 3rem;
+                font-size: 3rem;
+            }
         }
     }
 
@@ -106,8 +125,33 @@ figure {
             grid-column: span 4;
         }
     }
+
+    figure {
+        margin: 0;
+        figcaption {
+            margin: 0;
+            text-align: center;
+        }
+    }
 }
 
 @media screen and (min-width:992px){
-    
+    #updates-section {
+        .title {
+            font-size: 5rem;
+            line-height: 5rem;
+        }
+    }
+
+    #blog-section figure {
+        gap: 0em 5rem;
+    }
+}
+
+@media screen and (min-width:1100px){
+    #blog-section figure {
+        #blog_container {
+            width: 416px;
+        }
+    }
 }

@@ -62,3 +62,16 @@ footer {
 #signoff {
     color: variables.$tertiary;
 }
+
+@media screen and (min-width:992px){
+    #contact_menu,#secondary_menu {
+        li {
+            margin-bottom: 0;
+            margin-left: .5rem;
+            display: inline-block;
+        }
+    }
+    #footer-title {
+        text-align: left;
+    }
+}
