@@ -32,3 +32,9 @@
     height: 400px;
     background-image: url('../img/small/steak-min.jpg');
 }
+
+@media screen and (min-width:992px) {
+    #program {
+        height: 650px;
+    }
+}

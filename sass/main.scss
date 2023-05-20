@@ -86,10 +86,6 @@ figure {
             grid-column: span 6;
         }
     }
-
-    // figure {
-    //     margin: 1rem 0 3.5rem;
-    // }
 }
 
 @media screen and (min-width:800px){
@@ -149,6 +145,12 @@ figure {
                 grid-column: span 4;
             }
             grid-column: span 4;
+            figcaption {
+                font-size: 1.2rem;
+            }
+        }
+        .bkg {
+            margin-bottom: 1rem;
         }
     }
 
@@ -172,6 +174,19 @@ figure {
     #blog-section figure {
         gap: 0em 5rem;
     }
+
+    section {
+        margin: 0 1rem 10rem;
+        &#banner, &#main_bkg {
+            margin: 0 0 10rem;
+        }
+    }
+    #banner {
+        height: 634px;
+    }
+    #updates_container {
+        width: 300px;
+    }
 }
 
 @media screen and (min-width:1100px){
@@ -179,6 +194,10 @@ figure {
         #blog_container {
             width: 416px;
         }
+    }
+
+    section {
+        margin: 0 4rem 10rem;
     }
 }
 
@@ -197,5 +216,5 @@ figure {
                 line-height: 2.2rem;
             }
         }
-    }
+    } 
 }
