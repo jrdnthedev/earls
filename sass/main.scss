@@ -104,6 +104,11 @@ figure {
             align-self: center;
             margin-bottom: 0;
         }
+        figure {
+            figcaption {
+                text-align: unset;
+            }
+        }
     }
 
     #blog-section figure{
