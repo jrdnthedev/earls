@@ -5,9 +5,9 @@ header {
   position: sticky;
   top: 0;
   nav {
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
-
+    align-items: center;
     background: variables.$white;
     ul {
       visibility: hidden;
@@ -63,7 +63,7 @@ header {
 
 #main_bkg {
   background-image: url("../img/grilled_platter-min.jpg");
-  height: calc(100vh - 140px);
+  height: calc(100vh - 200px);
 }
 
 @media screen and (min-width: 992px) {
@@ -75,6 +75,7 @@ header {
   header {
     nav {
       display: block;
+      padding: 2rem;
       ul {
         display: inline-block;
         position: unset;
