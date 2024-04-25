@@ -1,44 +1,45 @@
-@use 'variables';
+@use "variables";
 
 .close {
-    position: absolute;
-    right: 32px;
-    top: 32px;
-    width: 32px;
-    height: 32px;
-    opacity: 0.3;
-    }
-    .close:hover {
-    opacity: 1;
-    }
-    .close:before, .close:after {
-    position: absolute;
-    left: 15px;
-    content: ' ';
-    height: 33px;
-    width: 2px;
-    background-color: variables.$white;
-    }
-    .close:before {
-    transform: rotate(45deg);
-    }
-    .close:after {
-    transform: rotate(-45deg);
-    }
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: variables.$white;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
 
-    .primary {
-        color: variables.$white;
-        background-color: variables.$primary;
-    }
+.primary {
+  color: variables.$white;
+  background-color: variables.$primary;
+}
 
-    .btn {
-        border: 0;
-        padding: 1rem 2rem;
-        text-transform: uppercase;
-    }
+.btn {
+  border: 0;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+}
 
-    .secondary {
-        color: variables.$primary;
-        background-color: variables.$white;
-        border: 1px solid variables.$primary;
-    }
+.secondary {
+  color: variables.$primary;
+  background-color: variables.$white;
+  border: 1px solid variables.$primary;
+}

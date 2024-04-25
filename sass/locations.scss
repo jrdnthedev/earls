@@ -1,0 +1,14 @@
+#select_container {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  margin-top: 2rem;
+}
+
+.select_fields {
+  border: 1px solid #003349;
+  padding: 1rem;
+  option {
+    padding: 1rem;
+  }
+}
