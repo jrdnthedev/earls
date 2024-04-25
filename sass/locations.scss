@@ -86,6 +86,10 @@
   }
 }
 
+#find-location {
+  margin: 0 1rem 3rem;
+}
+
 @media screen and (min-width: 768px) {
   #uniquely_section p {
     font-size: 3rem;
@@ -99,6 +103,9 @@
     }
   }
 
+  #find-location {
+    margin: 0 7rem 3rem;
+  }
   #uniquely_section p {
     font-size: 3rem;
     line-height: 4.4rem;
@@ -112,5 +119,14 @@
 @media screen and (min-width: 1440px) {
   #uniquely_text_wrapper {
     width: 1000px;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  #locations-section figure {
+    height: 550px;
+    #banner.bkg {
+      height: 550px;
+    }
   }
 }
