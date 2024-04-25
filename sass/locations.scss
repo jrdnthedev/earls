@@ -76,10 +76,13 @@
   padding: 2.4rem;
   background-color: #b6cfd0;
   margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
   p {
     font-size: 2.4rem;
     font-weight: 200;
     line-height: 3.4rem;
+    margin: 0;
   }
 }
 
@@ -97,7 +100,17 @@
   }
 
   #uniquely_section p {
-    font-size: 4rem;
-    line-height: 5.4rem;
+    font-size: 3rem;
+    line-height: 4.4rem;
+  }
+  #uniquely_text_wrapper {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #uniquely_text_wrapper {
+    width: 1000px;
   }
 }
