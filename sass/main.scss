@@ -18,6 +18,8 @@ body {
 
 .scroll-lock {
     overflow-y: hidden;
+    //for ios
+    position: fixed;
 }
 
 ul {

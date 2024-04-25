@@ -1,111 +1,112 @@
-@use 'variables';
+@use "variables";
 header {
-    //start / end values
-    grid-column: 1 / -1;
-    position: sticky;
-    top: 0;
-    nav {
-        padding: 1.25rem;
-        display: flex;
-        
-        background: variables.$white;
+  //start / end values
+  grid-column: 1 / -1;
+  position: sticky;
+  top: 0;
+  nav {
+    padding: 2rem;
+    display: flex;
+
+    background: variables.$white;
     ul {
-        visibility: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: 0;
-        padding: 2rem;
-        height: calc(100vh - 64px);
-        z-index: 1;
-        background: variables.$primary;
-        opacity: 0;
-        transition: .6s ease all;
-        &.active {
-            visibility: visible;
-            opacity: 1;
-            transition: .6s ease all;
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0;
+      padding: 2rem;
+      height: calc(100vh - 64px);
+      z-index: 1;
+      background: variables.$primary;
+      opacity: 0;
+      transition: 0.6s ease all;
+      &.active {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.6s ease all;
+      }
+      li {
+        padding: 1.25rem 0;
+        a {
+          color: variables.$white;
+          font-size: 2rem;
+          font-family: sans-serif;
         }
-        li {
-            padding: 1.25rem 0;
-            a {
-                color: variables.$white;
-                font-size: 2rem;
-                font-family: sans-serif;
-            }
-        }
+      }
     }
-    }
+  }
 }
 
 #main_nav {
-    display: grid;
+  display: grid;
 }
 
 #menu_container {
-    grid-column: 3 /span 8;
-    align-self: center;
+  grid-column: 3 / span 8;
+  align-self: center;
 }
 
 #hamburger_toggle {
-    display: inline-block;
-    margin-right: 1.25rem;
-    span{
-        display: block;
-        width: 26px;
-        height: 2px;
-        background-color: variables.$primary;
-        margin: 5px 0;
-    }
+  display: inline-block;
+  margin-right: 1.25rem;
+  span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: variables.$primary;
+    margin: 5px 0;
+  }
 }
 
 #main_bkg {
-    background-image: url('../img/grilled_platter-min.jpg');
-    height: calc(100vh - 140px);
+  background-image: url("../img/grilled_platter-min.jpg");
+  height: calc(100vh - 140px);
 }
 
-@media screen and (min-width:992px){
-    #hamburger_toggle, #close_btn {
-        display: none;
-    }
+@media screen and (min-width: 992px) {
+  #hamburger_toggle,
+  #close_btn {
+    display: none;
+  }
 
-    header {
-        nav {
-            display: block;
-            ul {
-                display: inline-block;
-                position: unset;
-                top: unset;
-                left: unset;
-                right: unset;
-                bottom: unset;
-                margin: unset;
-                padding: unset;
-                height: unset;
-                z-index: unset;
-                background: unset;
-                text-align: unset;
-                visibility: visible;
-                opacity: 1;
-                li {
-                    display: inline-block;
-                    padding: 0;
-                    margin-left: 1rem;
-                    a {
-                        color: variables.$primary;
-                        font-size: 1rem;
-                        &:hover {
-                            color: variables.$tertiary;
-                        }
-                    }
-                }
-            } 
-        }
-    }
-
-    #main_nav {
+  header {
+    nav {
+      display: block;
+      ul {
         display: inline-block;
+        position: unset;
+        top: unset;
+        left: unset;
+        right: unset;
+        bottom: unset;
+        margin: unset;
+        padding: unset;
+        height: unset;
+        z-index: unset;
+        background: unset;
+        text-align: unset;
+        visibility: visible;
+        opacity: 1;
+        li {
+          display: inline-block;
+          padding: 0;
+          margin-left: 1rem;
+          a {
+            color: variables.$primary;
+            font-size: 1rem;
+            &:hover {
+              color: variables.$tertiary;
+            }
+          }
+        }
+      }
     }
+  }
+
+  #main_nav {
+    display: inline-block;
+  }
 }
