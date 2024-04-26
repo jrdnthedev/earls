@@ -1,40 +1,45 @@
-#banner {   
-    background-image: url('../img/banner/bar-min.jpg');
-    height: 434px;
+#banner {
+  background-image: url("../img/banner/bar-min.jpg");
+  height: 434px;
+}
+
+#homeImage {
+  background-image: url("../img/banner/homefood.jpg");
+  height: 434px;
 }
 
 #program {
-    height: 450px;
-    background-image: url('../img/small/peacock-min.jpg');
+  height: 450px;
+  background-image: url("../img/small/peacock-min.jpg");
 }
 
 #updates {
-    height: 400px;
-    background-image: url('../img/small/table-min.jpg');
+  height: 400px;
+  background-image: url("../img/small/table-min.jpg");
 }
 
 #art {
-    height: 400px;
-    background-image: url('../img/small/takeout-min.jpg');
+  height: 400px;
+  background-image: url("../img/small/takeout-min.jpg");
 }
 
 #burgers {
-    height: 400px;
-    background-image: url('../img/small/burgers-min.jpg');
+  height: 400px;
+  background-image: url("../img/small/burgers-min.jpg");
 }
 
 #pasta {
-    height: 400px;
-    background-image: url('../img/small/pasta-min.jpg');
+  height: 400px;
+  background-image: url("../img/small/pasta-min.jpg");
 }
 
 #steak {
-    height: 400px;
-    background-image: url('../img/small/steak-min.jpg');
+  height: 400px;
+  background-image: url("../img/small/steak-min.jpg");
 }
 
-@media screen and (min-width:992px) {
-    #program {
-        height: 650px;
-    }
+@media screen and (min-width: 992px) {
+  #program {
+    height: 650px;
+  }
 }
