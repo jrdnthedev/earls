@@ -10,3 +10,22 @@
     margin: 0;
   }
 }
+
+#products-section h2 {
+  padding: 1rem;
+}
+#product-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  figure {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #product-wrapper {
+    figure {
+      width: 33.33%;
+    }
+  }
+}
