@@ -11,7 +11,8 @@
   }
 }
 
-#products-section h2 {
+#products-section h2,
+#merch-section h2 {
   padding: 1rem;
 }
 #product-wrapper {
@@ -19,6 +20,32 @@
   flex-wrap: wrap;
   figure {
     padding: 1rem;
+  }
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  column-gap: 12px;
+  transition: all 0.5s ease;
+}
+
+.carousel figure {
+  img {
+    width: 450px;
+    height: 350px;
+    flex-shrink: 0;
+    transition: all 0.5s ease;
+  }
+  h3 {
+    margin: 0;
+  }
+  p {
+    margin: 0.5rem 0 0 0;
   }
 }
 
