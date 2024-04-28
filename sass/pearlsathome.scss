@@ -30,14 +30,16 @@
 
 .carousel {
   display: flex;
+  justify-content: center;
   column-gap: 12px;
   transition: all 0.5s ease;
 }
 
 .carousel figure {
+  margin: 0 0 1rem 0;
   img {
-    width: 450px;
-    height: 350px;
+    width: 280px;
+    height: 280px;
     flex-shrink: 0;
     transition: all 0.5s ease;
   }
@@ -49,10 +51,19 @@
   }
 }
 
+#control_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 @media screen and (min-width: 992px) {
   #product-wrapper {
     figure {
       width: 33.33%;
     }
+  }
+
+  #control_wrapper {
+    width: 300px;
+    margin: 0 auto;
   }
 }
