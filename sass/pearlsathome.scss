@@ -31,12 +31,12 @@
 .carousel {
   display: flex;
   justify-content: center;
-  column-gap: 12px;
   transition: all 0.5s ease;
 }
 
 .carousel figure {
   margin: 0 0 1rem 0;
+  padding: 1rem;
   img {
     width: 280px;
     height: 280px;
@@ -55,6 +55,15 @@
   display: flex;
   justify-content: space-between;
 }
+@media screen and (min-width: 768px) {
+  .carousel figure {
+    width: 33.33%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
 @media screen and (min-width: 992px) {
   #product-wrapper {
     figure {
