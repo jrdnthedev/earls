@@ -14,7 +14,7 @@ header {
       position: fixed;
       background: variables.$white;
       margin: 0;
-      top: 73px;
+      top: 74px;
       bottom: 0;
       left: 0;
       right: 0;
@@ -23,7 +23,7 @@ header {
       transition: 0.8s ease all;
       padding: 1rem;
       visibility: hidden;
-      height: calc(100vh - 76px);
+      height: calc(100vh - 74px);
       text-align: left;
       &.active {
         opacity: 1;
