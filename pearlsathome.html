@@ -15,12 +15,14 @@
     <body id="body">
         <header>
             <nav id="primary_nav">
-                <a id="hamburger_toggle" href="#">
-                    <span></span><span></span><span></span>
-                </a>
+                <button id="hamburger_toggle">
+                    <div id="hamburger_menu">
+                        <div id="top"></div>
+                        <div id="bottom"></div>
+                    </div>
+                </button>
                 <h1 class="headline-main"><a href="index.html">Pearls</a></h1>
-                <ul id="main_nav">
-                    <a class="close" href="#" id="close_btn"></a>
+                <ul id="main_nav" role="menu" aria-labelledby="hamburger_toggle">
                     <div id="menu_container">
                         <li><a href="locations.html">Locations</a></li>
                         <li><a href="pearlsathome.html">Pearls At Home</a></li>
